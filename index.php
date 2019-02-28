@@ -1,27 +1,31 @@
 <?php
-    include "App/Controllers/HomeController.php";
+    //Chama o arquivo de autoload
+    require_once 'vendor\autoload.php';
+
+    use \App\Controllers\HomeController;
+    use \App\Models\Model;
 
     session_start();
 
-    $pagina = isset($_GET["pagina"]) ? $_GET["pagina"] : "index" ;
-    $ctrl = new Page();
+    $page = isset($_GET["page"]) ? $_GET["page"] : "index" ;
+    $ctrl = new HomeController();
 
-    if($_GET["form"] == "yes"){
-        include "App/Models/Model.php";
+    if(isset($_GET['action'])){
+    
+        $exe = new Model();
 
-        $exe = new Main();
-        $exe->Form();
+        switch($_GET['action']){
+            case "form":
+                $exe->Form();
+                break;
+            case "login":
+                $exe->Adm();
+                break;
+        }
+
     }
-    else if($_GET["login"] == "yes"){
-        include "App/Models/Model.php";
 
-        $exe = new Main();
-        $exe->Adm();
-
-        $_GET["pagina"] = "adm";
-    }
-
-    switch($pagina){
+    switch($page){
             case "index":
                 $ctrl->index();
                 break;

@@ -1,6 +1,9 @@
 <?php
 
-class Main{
+namespace App\Models;
+
+use PDO;
+class Model{
 
     public function Form(){
 
@@ -63,7 +66,7 @@ class Main{
 
             //Verificação de validade
             if($cont == 1){
-                $_SESSION['M'] = 'login';
+                $_SESSION['login'] = 'login';
                 $pdo = null;
             }
             else{

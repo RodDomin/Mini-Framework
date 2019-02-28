@@ -1,6 +1,6 @@
 <?php
 
-    if($_SESSION['M'] != 'login'){
+    if($_SESSION['login'] != 'login'){
         include "ADM/index.php";
     }
     else{

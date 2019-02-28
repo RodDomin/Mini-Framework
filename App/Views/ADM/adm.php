@@ -1,3 +1,8 @@
+<?php
+    if($_SESSION['login'] != 'login'){
+        die; 
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

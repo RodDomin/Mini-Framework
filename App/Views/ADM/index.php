@@ -1,6 +1,5 @@
 <?php
-    session_start();
-    $_SESSION['M'] = 'index';
+    $_SESSION['login'] = 'index';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -9,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/styles/login.css">
+    <link rel="stylesheet" href="/Assets/styles/login.css">
     <title>Login</title>
 </head>
 <body>
@@ -20,7 +19,7 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Sign In</h5>
-            <form class="form-signin" method="POST">
+            <form class="form-signin" method="POST" action="?page=adm">
               <div class="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name ="email">
                 <label for="inputEmail">Email address</label>
