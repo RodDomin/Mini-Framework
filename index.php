@@ -6,6 +6,8 @@
     use \App\Models\Model;
 
     session_start();
+    // Oculta os notice gerado pela não inicializaçáo de variáveis
+    error_reporting(0);
 
     $page = isset($_GET["page"]) ? $_GET["page"] : "index" ;
     $ctrl = new HomeController();
