@@ -10,7 +10,18 @@
         <title>Home page</title>
     </head>
     <body>
-    
+        <!-- Hello world -->
+        <div class="jumbotron">
+            <h1 class="display-4">Olá, mundo!</h1>
+            <p class="lead">
+                Bem-vindo ao Mini-Framework, aproveite pra estudar nosso exemplo.
+            </p>
+            <hr class="my-4">
+            <p>Mais informações podem ser encontradas em nossa documentação.</p>
+            <p class="lead">
+            <a class="btn btn-primary btn-lg" href="https://github.com/RodDomin/Mini-Framework/blob/master/README.md" role="button" target="_blank">Leia mais</a>
+            </p>
+        </div>
     </body>
 
 </html>
