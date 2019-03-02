@@ -34,5 +34,7 @@
             case "adm":
                 $ctrl->adm();
                 break;
-
+            default:
+                $ctrl->index();
+                break;  
     }

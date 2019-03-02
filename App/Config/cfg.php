@@ -5,3 +5,4 @@
     define("BD_PASS","");
     define("TBL_ADM","");
     define("TBL_MSG","");
+    define("ABS_PATH", "http://dev.local");
