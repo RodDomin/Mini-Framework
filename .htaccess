@@ -1,2 +1,7 @@
 # Ativar a engine de reescrita
 RewriteEngine on
+
+RewriteBase /
+
+RewriteRule ^adm\/?$ ?page=adm  [L,NC]
+RewriteRule ^index\/?$ ?page=index  [L,NC]

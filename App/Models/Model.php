@@ -3,11 +3,13 @@
 namespace App\Models;
 
 use PDO;
+
 class Model{
 
-    require_once "/App/Config/cfg.php";
-
+    
     public function Form(){
+        
+        require_once "App/Config/cfg.php";
 
         //Definição de conexão PDO
         $pdo = new PDO("mysql:host=".BD_HOST.";dbname=".BD_NAME.",".BD_LOGIN.",".BD_PASS);
@@ -37,6 +39,8 @@ class Model{
     }
 
     public function Adm(){
+
+        require_once "App/Config/cfg.php";
 
         //Dados sobre Login da Usuario
         $loginuser = $_POST['email'];

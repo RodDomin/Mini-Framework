@@ -7,6 +7,7 @@
         <link rel="stylesheet" media="screen and (min-width: 900px)" href="src\styles\index_computer.css">
         <link rel="stylesheet" media="screen and (max-width: 600px)" href="src\styles\index_mobile.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/Assets/img/icons/icons8-home-52.png" type="image/x-icon">
         <title>Home page</title>
     </head>
     <body>
@@ -20,10 +21,10 @@
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarMF">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Página Inicial<span class="sr-only">(Atual)</span></a>
+                    <a class="nav-link" href="/index">Página Inicial<span class="sr-only">(Atual)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=adm">Login</a>
+                    <a class="nav-link" href="/adm">Login</a>
                 </li>
                 </ul>
             </div>

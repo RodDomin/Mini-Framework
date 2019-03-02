@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/Assets/styles/login.css">
+    <link rel="shortcut icon" href="/Assets/img/icons/icons8-customer-filled-50.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
@@ -21,11 +22,11 @@
     </button>
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarMF">
         <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="?page=adm">Login<span class="sr-only">(Atual)</span></a>
-        </li>
         <li class="nav-item">
-            <a class="nav-link" href="?page=index">Página Inicial</a>
+            <a class="nav-link" href="/index">Página Inicial</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/adm">Login<span class="sr-only">(Atual)</span></a>
         </li>
         </ul>
     </div>
